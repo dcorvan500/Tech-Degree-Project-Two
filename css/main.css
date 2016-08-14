@@ -1,0 +1,106 @@
+/*******************
+General
+********************/
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.wrapper {
+	
+	margin:0 auto;
+	background-color:#FAFAFA;
+}
+
+a {
+	text-decoration:none;
+}
+
+#site-name {
+	margin:0;
+	text-align: center;
+}
+
+header {
+	margin:0;
+}
+
+
+
+h1 {
+	margin-top: 0;
+}
+
+.container {
+  width: 80%;
+  padding:0 5%;
+  margin: auto;
+	
+}
+
+img {
+	max-width:100%;
+}
+/*******************
+Navigation
+********************/
+
+nav {
+	text-align: center;
+	padding-top: 5px;
+	
+
+}
+nav ul {
+	list-style:none;
+	padding-bottom:30px;
+}
+
+nav ul li {
+
+	margin:10px 0;
+	padding:5px 0;
+	margin-right:20px;
+	background-color:#fff;
+}
+
+nav a {
+	font-weight:800;
+	padding: 15px 0px;
+}
+
+/*******************
+Page Portfolio
+********************/
+section {
+	text-align: center;
+	padding:0 7.5%;
+	padding-top:50px;
+}
+
+
+
+#portfolio {
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+
+#portfolio li {
+	
+	margin:2.5%;
+	background-color: #fff
+	color: #bdc3c7;
+}
+
+#portfolio li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #bdc3c7;
+}
