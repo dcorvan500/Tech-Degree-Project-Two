@@ -1,142 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
     <title>Project Two | Treehouse</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
 	    <div class="wrapper">
-	      <header>
-		       <a href="index.html" id="site-name">
-			       <h1>Damien Corvan</h1>
+	      <header class="clearfix">
+		       <a href="index.html">
+			       <h1 class="site-name">Damien Corvan</h1>
 		       </a>
-		       <nav>
+		       <nav class="main-nav">
 			       <ul>
-				       <li><a href="index.html">Home</a></li>
-				       <li><a href="index.html">Portfolio</a></li>
-				       <li><a href="index.html">Contact</a></li>
+				       <li><a href="index.html">HOME</a></li>
+				       <li><a href="#portfolio">PORTFOLIO</a></li>
+				       <li><a href="#contact">CONTACT</a></li>
 			       </ul>
 		       </nav>
 	       </header>
-	       <div class="container">
-		       <img src="img/responsive-layout-profile.png" alt="Profile Iimage">
-		       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web developemnt at treehouse and am excited to put all my skills to use</p>
+	       <div class="container clearfix">
+		       <img class="profile-image" src="img/responsive-layout-profile.png" alt="Profile image">
+		       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web developemnt at treehouse and am excited to put all my skills to use!</p>
 	       </div>
 	       </div>
-	       <section>
-		   <ul id="portfolio">
-		    <h1> Portfolio</h1>
-			   <li> 
-		               <a href="img/portfolio-1.png">
-					   <img src="img/portfolio-1.png" alt="">
-					   <p>Experimentation with colour texture.</p>
-				   </a>
-		       </li>
-		        <li>
-		               <a href="img/portfolio-2.png">
-					   <img src="img/portfolio-2.png" alt="">
-					   <p>Playing with blending moces in photoshop.</p>
-				   </a>
-		       </li>
-		        <li>
-		               <a href="img/portfolio-3.png">
-					   <img src="img/portfolio-3.png" alt="">
-					   <p>Trying to create an 80's style of glows.</p>
-				   </a>
-		       </li>
-		        <li>
-		               <a href="img/portfolio-4.png">
-					   <img src="img/portfolio-4.png" alt="">
-					   <p>Drips created using Photoshop brushes</p>
-				   </a>
-		       </li>
-		        <li>
-		               <a href="img/portfolio-5.png">
-					   <img src="img/portfolio-5.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-6.png">
-					   <img src="img/portfolio-6.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-7.png">
-					   <img src="img/portfolio-7.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-8.png">
-					   <img src="img/portfolio-8.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-9.png">
-					   <img src="img/portfolio-9.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-10.png">
-					   <img src="img/portfolio-10.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-11.png">
-					   <img src="img/portfolio-11.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-12.png">
-					   <img src="img/portfolio-12.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-13.png">
-					   <img src="img/portfolio-13.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-14.png">
-					   <img src="img/portfolio-14.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-		       <li>
-		               <a href="img/portfolio-15.png">
-					   <img src="img/portfolio-15.png" alt="">
-					   <p>Creating shapes using repition</p>
-				   </a>
-		       </li>
-	           </ul>
+	       <section id="portfolio" class="clearfix">
+	        <h2 class="portfolio-title">Portfolio</h2>
+			    <ul id="portfolio-image" class="clearfix">
+				   <li> 
+			               <a href="img/portfolio-1.png">
+						   <img src="img/portfolio-1.png" alt="">
+						   <h2>Marketing Page</h2>
+						   <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+					   </a>
+			       </li>
+			        <li>
+			               <a href="img/portfolio-2.png">
+						   <img src="img/portfolio-2.png" alt="">
+						   <h2> Search Page </h2>
+						   <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+					   </a>
+			       </li>
+			        <li>
+			               <a href="img/portfolio-3.png">
+						   <img src="img/portfolio-3.png" alt="">
+						   <h2> Travel App </h2>
+						   <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+					   </a>
+			       </li>
+			        <li>
+			               <a href="img/portfolio-6.png">
+						   <img src="img/portfolio-6.png" alt="">
+						   <h2>Map of Favourite Sports </h2>
+						   <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+					   </a>
+			       </li>
+			        <li>
+			               <a href="img/portfolio-5.png">
+						   <img src="img/portfolio-5.png" alt="">
+						    <h2>Photo Gallery </h2>
+						   <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+					   </a>
+			       </li>
+			       <li>
+			               <a href="img/portfolio-4.png">
+						   <img src="img/portfolio-4.png" alt="">
+						    <h2>Calculator</h2>
+						   <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+					   </a>
+			       </li>
+		           </ul>
 	  	    </section>
-
-
-
-
-
-
-
-
-	    </div>
-
-
+	  	    <section id="contact">
+		  	    <h2>Contact</h2>
+		  	    <p> If you're interested in chatting or want more information on what I've been working on, I'd love to here from you!
+		  	    </p>
+		  	    <ul class="contact-info">
+		         	<li class="phone"><strong>Phone:</strong></li><li><a href="Tel:07934837529">07934837529</a></li>
+		         </ul>
+		        <ul class="contact-info">
+		         	<li class="mail"><strong>Email:</strong></li><li><a href="mailto:dcorvan500@hotmail.co.uk">dcorvan500@hotmail.co.uk</a></li>
+		        </ul>
+		       
+		        
+            </section>
+              <hr>
+            <footer class="clearfix">
+              <h3 class="footer-sitename"><strong>Damien Corvan</strong></h3>
+              <h3 class="footer-text"><a href="index.html"><strong>BACK TO TOP</strong></a></h3>
+	              <ul class=footer-nav>
+                       <li class="footer-right"><a href="index.html">HOME</a></li>
+				       <li class="footer-right"><a href="#portfolio">PORTFOLIO</a></li>
+				       <li class="footer-right"><a href="#contact">CONTACT</a></li>
+					</ul>
+            </footer>
 	</body>
-
-
-
-
-
-
 </html>

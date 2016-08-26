@@ -2,38 +2,38 @@
 General
 ********************/
 * {
-	box-sizing: border-box;
+	box-sizing:border-box;
 
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
 
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	background-color: #F9F9F9;
+}
+
+hr {
+	width: 85%;
+	border-top: .1px solid #dfe2e6;
+	margin-top:70px;
 }
 
 .wrapper {
-	
 	margin:0 auto;
-	background-color:#FAFAFA;
 }
 
-a {
+a{
 	text-decoration:none;
 }
 
-#site-name {
-	margin:0;
-	text-align: center;
+a:visited {
+	text-decoration:none;
 }
-
-header {
-	margin:0;
-}
-
-
 
 h1 {
 	margin-top: 0;
+	padding-top: 10px;
 }
 
 .container {
@@ -45,6 +45,11 @@ h1 {
 
 img {
 	max-width:100%;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 150%;
 }
 /*******************
 Navigation
@@ -64,43 +69,328 @@ nav ul {
 nav ul li {
 
 	margin:10px 0;
-	padding:5px 0;
+	padding:10px 0;
 	margin-right:20px;
 	background-color:#fff;
 }
 
 nav a {
 	font-weight:800;
-	padding: 15px 0px;
+	padding: 10px 0px;
+}
+
+/* Selected nav link */
+h1, h1 a, nav a, nav a:visited {
+	color:#000;
+}
+li a, li a:visited {
+	color:#000;
+}
+
+nav a.selected, nav a:hover { 
+	color:#778899;;
+}
+ a:hover { 
+	color:#778899;
+}
+
+
+.site-name {
+	margin:0;
+	text-align: center;
+}
+
+header {
+	margin:0;
 }
 
 /*******************
 Page Portfolio
 ********************/
+
+
+
 section {
 	text-align: center;
-	padding:0 7.5%;
-	padding-top:50px;
+}
+
+.portfolio-title{
+	padding-bottom: 40px;
+	color:#B1AEAE;
+	font-weight: 700;
 }
 
 
-
-#portfolio {
+#portfolio  {
+    background-color: white;
 	margin:0;
+	padding:0 7.5%;
+	padding-top:40px;
+	padding-bottom: 30px;
+	
+}
+
+#portfolio ul {
 	padding: 0;
 	list-style:none;
 }
 
-#portfolio li {
+#portfolio h2 {
+	color:#535050;
+
+}
+
+#portfolio p {
+    padding-bottom: 40px;
 	
+}
+
+.portfolio-image li {
 	margin:2.5%;
-	background-color: #fff
+	background-color: #fff;
 	color: #bdc3c7;
 }
 
-#portfolio li a p {
+.portfolio-image li a p {
 	margin: 0;
 	padding: 5%;
 	font-size: 0.75em;
 	color: #bdc3c7;
 }
+
+
+/*******************
+CONTACT 
+********************/
+
+
+#contact 
+{
+	background-color:#fafafa;
+    padding:0 5%;
+    padding-top:40px;
+}
+
+#contact h2,
+#contact p 
+{
+	padding-bottom:25px;
+	color:#535050;
+}
+
+.contact-info li {
+	list-style: none;
+	display: inline-block;
+}
+
+.contact-info li.phone {
+	margin-left:-100px;
+	padding-right: 10px;
+}
+
+.contact-info li.mail {
+	margin-left: -15px;
+	padding-right: 10px;
+}
+
+/*******************
+FOOTER
+********************/
+
+
+footer {
+	
+	margin:0 auto;
+	background-color:#FAFAFA;
+	margin-bottom: 25px;
+}
+
+footer ul {
+	list-style:none;
+}
+
+.footer-sitename {
+	float:left;
+	margin-left:7.5%;
+	text-align: left;
+	width:35%;
+}
+
+.footer-text {
+	float:right;
+	margin-right: 7.5%;
+	text-align: right;
+	width:50%;
+}
+
+footer ul li {
+	display:none;
+}
+
+footer a:visited {
+	color:#000;
+}
+
+footer a:hover {
+	color:#778899;
+}
+
+/* ---- Float clearfix ---- */
+
+       .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+/*******************
+RESPONSIVE 768px
+********************/
+
+@media screen and (min-width:768px) 
+
+{
+
+.site-name {
+	margin-top: 30px;
+	}
+
+nav ul li {
+	display:inline-block;
+	background-color:#FAFAFA;
+	padding: 5px 20px;
+}
+
+.profile-image {
+	float:right;
+	width:45%;
+	padding-bottom: 40px;
+	padding-left: 40px;
+}
+.container {
+	width:100%;
+}
+.container p {
+	text-align:left;
+	font-size: 1.2rem;
+	padding-bottom: 40px;
+}
+
+#portfolio {
+    padding: 0 5%;
+    padding-top: 30px;
+ }
+
+#portfolio li {
+	float:left;
+	width:48%;
+	margin:0 1%
+}
+
+
+
+section {
+	padding:0;
+	margin:0;
+}
+
+
+#contact p,
+#contact li  {
+	font-size:1.3rem;
+}
+
+.footer-text {
+	display: none;
+}
+
+footer ul li {
+	display: inline-block;
+	padding:0 15px;
+}
+
+
+
+.footer-nav {
+    float:right;
+	margin-right: 7.5%;
+	text-align: right;
+	width:50%;
+	
+}
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+/*******************
+RESPONSIVE 1224px
+********************/
+
+
+
+@media screen and (min-width:1224px) {
+
+.site-name {
+	float:left;
+	width:45%;
+	margin-left:5%;
+	text-align:left;
+
+}
+
+.main-nav {
+	float:right;
+	width:45%;
+	margin-right:5%;
+	text-align:right;
+	margin-top:15px;
+}
+
+header {
+	max-height: 1200px;
+}
+
+.container p {
+	font-size:1.5em;
+
+}
+
+.profile-image {
+	width:40%;
+	padding-bottom:7.5%;
+}
+
+
+#portfolio {
+	max-width: 1200px;
+	margin:0 auto;
+}
+
+#portfolio li {
+	width:30%;
+	margin:0 1.66665%;
+	
+}
+
+#contact {
+	margin:0 20%;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+}
+
+
+
+
