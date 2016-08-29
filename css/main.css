@@ -187,7 +187,7 @@ SKILLS
 {   background-color:#6BB9F0;
     padding:2.5% 5%;
     padding-bottom:40px;
-    margin:0px auto 0;
+    margin:0px auto;
     box-shadow: 0 1px 4px rgba(0,0,0,.5);
 
 }
@@ -204,14 +204,30 @@ SKILLS
 	font-size: 1.5rem;
 	color:#fff;
 }
+#skills hr {
+	margin-top:0;
+	max-width: 40%;
+}
+
+#skills ul {
+
+	margin-left:-25px;
+
+}
+
+
 
 #skills ul li {
 
 	font-size: 1.2em;
-	padding:7.5px 0;
-	color:#fff;
+	margin:10px auto;
+	padding:10px 0px;
+	color: #3498db;
 	list-style:none;
+	background-color:#2980b9;
 	padding-bottom: 15px;
+	max-width: 400px;
+
 }
 
 /*******************
@@ -350,7 +366,11 @@ section {
 	padding:0;
 	margin:0;
 }
-
+#skills ul li {
+	width:50%;
+	display: inline-block;
+	margin:1% 2.5%;
+}
 
 #contact p,
 #contact li  {
@@ -427,7 +447,25 @@ header {
 #portfolio li {
 	width:30%;
 	}
+
+
+#skills ul {
+
 	
+
+
+}
+
+
+#skills ul li {
+	width:50%;
+	display: inline-block;
+	margin:1% 2.5%;
+}
+
+
+
+
 #contact {
 	margin:10px 20%;
 }
